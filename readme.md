@@ -56,9 +56,9 @@ python GUI.py
 
 <img src="fig\1.png" alt="1" style="zoom:27%;" />
 
-<img src="G:\Code\Med-Spider\fig\4.png" alt="4" style="zoom:37%;" />
+<img src="fig\4.png" alt="4" style="zoom:37%;" />
 
-<img src="G:\Code\Med-Spider\fig\3.png" alt="3" style="zoom:50%;" />
+<img src="fig\3.png" alt="3" style="zoom:50%;" />
 
 ## 注意事项
 

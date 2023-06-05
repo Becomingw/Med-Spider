@@ -53,7 +53,7 @@ def download_pdf():
 
 # 超连接
 def github_link():
-    webbrowser.open("https://github.com/Becomingw")
+    webbrowser.open("https://github.com/Becomingw/Med-Spider/")
 def caiyun_link():
     webbrowser.open("https://docs.caiyunapp.com/blog/2018/09/03/lingocloud-api/")
 
@@ -115,7 +115,7 @@ kw_entry.insert(0, '未使用GPT输入需为英文')
 kw_entry.grid(row=4, column=1, sticky="e")
 
 # 超链接
-label = Label(root, text="访问我的GitHub", fg="blue", cursor="hand2")
+label = Label(root, text="访问项目", fg="blue", cursor="hand2")
 label.grid(row=2, column=2, padx=5)
 # 绑定标签的点击事件到open_link函数
 label.bind("<Button-1>", lambda e: github_link())

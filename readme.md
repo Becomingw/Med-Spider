@@ -77,5 +77,5 @@ openai.api_base = 'https://api.openai.com/v1' # 更改api后请使用支持chatG
 
 ## 版权信息
 
-本项目遵循MIT许可证，详情请见LICENSE文件。
+本项目遵循[Apache](https://github.com/Becomingw/Med-Spider/edit/main/LICENSE)许可证。
 

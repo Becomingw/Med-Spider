@@ -40,8 +40,11 @@ def main(page, kw, cytoken):
 
             # 获取发表年份
             date_tem = article.find('span', attrs={'class': 'cit'})
-            date = date_tem.text[0:4]
-            paper_record['Date'] = date + '年'
+            try:
+                date = date_tem.text[0:4]
+                paper_record['Date'] = date + '年'
+            except:
+                pass
 
             # 获取DOI信息
             doi = article.find('span', attrs={"class": "citation-doi"})
@@ -51,9 +54,12 @@ def main(page, kw, cytoken):
                 paper_record['doi'] = doi.string.strip()[5:-1]
 
             # 获取PMID
-            PMID = article.find('strong', attrs={"class": "current-id"})
-            pmid = ''.join(filter(str.isdigit, PMID.text))
-            paper_record['PMID'] = pmid
+            try:
+                PMID = article.find('strong', attrs={"class": "current-id"})
+                pmid = ''.join(filter(str.isdigit, PMID.text))
+                paper_record['PMID'] = pmid
+            except:
+                pass
 
             # 获取文章地址
             try:
@@ -68,8 +74,11 @@ def main(page, kw, cytoken):
 
             # 获取期刊
             journal_temp = article.find('button', attrs={'class': 'journal-actions-trigger trigger'})
-            journal = journal_temp.get('title')
-            paper_record['journal'] = journal
+            try:
+                journal = journal_temp.get('title')
+                paper_record['journal'] = journal
+            except:
+                pass
             # 获取摘要信息
             abstract = []
             abstracte = []
